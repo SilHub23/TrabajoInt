@@ -11,16 +11,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         
-
+  
 
     </head>
 
-    <body>
+    
         <header> 
             <div class="logo">
               <img src="/img/logo.jpg" alt="logo de la empresa">
               <h2 class=" Vajillas Maribel"> Vajillas Maribel</h2>
             </div>
+
             <nav>
               <li>
                 <a href="" class="nav-link">Nosotros</a>
@@ -35,18 +36,22 @@
                 <a href="" class="nav-link">Contacto</a>
               </li>
             </nav>
-        </header>
             
-            <section>
+        </header>
+
+    <body>
+    
+            
+            <section class="contenedor">
             <h3> Nosotros</h3>
               <p>Vajilla Maribel,una empresa que lleva mas de 5 años en el mercado
                 garantizando satisfación y comodidad en tus fiestas.
-                Te ofrecemos un amplio stock de vajillas y moviliarios para hacer de tu festejo el mejor
+                Te ofrecemos un amplio stock de vajillas y moviliarios para hacer de tu festejo el mejor.
                 </p>
                 </section>
             <sction>
               <h4> Productos</h4>
-             <p>A continuacion usted podra ver los productos con los cuales contamos</p>
+             <p>A continuacion usted podra ver los productos con los cuales contamos,tenemos descuentos segun la cantidad de invitados</p>
               <li>Platos: hondos y planos</li>
               <li>Copas: brindis, vino y agua</li>
               <li>Cubiertos: cuchillos, tenedores, cucharas y cucharitas</li>
@@ -56,61 +61,65 @@
               <li>Mesas y Sillas</li>
               </section>
 
-              <section>
+              <h5> Imagenes </h5>
+            
+          <section class=" imagenes-slide">
+              <!-- carrusel -->
 
-                <h5> Imagenes </h5>
-                 
-<section class=" imagenes-slide">
-    <!-- carrusel -->
+               <div id="carouselExampleIndicators" class="carousel slide">
+               <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
 
- <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/mobiliaria3.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/mobiliaria4.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/copas.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>      
-    
-</section>
-    <div>
+              <div class="carousel-inner">
+              <div class="carousel-item active">
+              <img src="/img/mobiliaria3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+              <img src="/img/mobiliaria4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+              <img src="/img/copas.jpg" class="d-block w-100" alt="...">
+              </div>
+  
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>  
+            </section>
+            
+            <h6>Contactanos a la brevedad nos pondremos en contacto</h6>
+            <div class= "conter-form">
+            <form action="#" autocomplete="off">
+              <input type="text"name="nombre" placeholder="Ingresa tu nombre"class="campo">
+              <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
+              <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+              <input type="submit" name="Enviar" value="Enviar mensaje" class="btn-enviar">
 
-    
 
-       
+            </form>
+            </div>
+            
+            
 
-    </div>
-    </header>
-        
+            </body>
     <footer> 
-        <ul>
-            <li><i class="fa-brands fa-square-facebook"></i>Facebook</li>
-            <li><i class="fa-brands fa-instagram"></i>Instagram</li>
-            <li><i class="fa-regular fa-envelope"></i>Email</li>
-            <li><i class="fa-brands fa-whatsapp"></i>WhatsApp</li>
-        </ul>
+            <ul class="sociales">
+             <li><a href="https://www.instagram.com/"><img src="/insta logo.svg" width="45" height="45"></a></li>
+             <li><a href="https://www.Facebook.com/"><img src="/facebook.png" width="45" height="45"></a></li>
+             <li><a href="https://www.WhatsApp.com/"><img src="/whatsapp.jpg" width="45" height="45"></a></li>
+             <li><a href="https://outlook.live.com/"><img src="/email.png" width="45" height="45"></a></li>
+            </ul>
 
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="app.js" async defer></script>
-    </body>
+    
 </html>
